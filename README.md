@@ -28,6 +28,7 @@ This file already has the basic steps (install .net, package restore ect)
    In a seperate action, use the analyzation script found under .github/scripts to analyze the findings from the inspection
 
 3. Static code analysis
+
    Log into 1password. Find the SonarQube item. Click on website url and login with the 1password credentials.
    Create a new project with your own credentials.
    Follow the guide provided in SonarQube.
@@ -39,10 +40,12 @@ Test the setup with creating sbom file and push it to the server
 
 # Security scanning 
 1. Implement Git leaks
+
    You can use github's own action for this: https://github.com/marketplace/actions/gitleaks .
    If you find any vulnerabilties in the ShoppingCart application - fix them!
    
-2. Implement Zap Scan
+3. Implement Zap Scan
+
    Google something like "github actions zap scanner".
    There should be a couple of different free to use zap scanners.
 
